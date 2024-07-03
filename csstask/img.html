@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Image with Scrolling Images</title>
+    <style>
+        .fixed-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the fixed image is behind the scrolling content */
+}
+
+.fixed-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div without distortion */
+}
+
+.scrolling-images {
+    position: relative;
+    padding-top: 50vh; /* Creates space for the fixed image at the top */
+}
+
+.scrolling-images img {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px; /* Adds space between the images */
+}
+    </style>
+    
+</head>
+<body>
+    <div class="fixed-img">
+        <img src="chim.jpg" alt="Fixed Image">
+    </div>
+    <div class="scrolling-images">
+        <img src="cute.jfif" alt="Scrolling Image 1">
+        <img src="chim.jpg" alt="Scrolling Image 2">
+        <img src="cute.jfif" alt="Scrolling Image 3">
+        <img src="chim.jpg" alt="Scrolling Image 4">
+    </div>
+</body>
+</html>
