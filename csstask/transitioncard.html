@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            height: 280px;
+            width: 700px;
+            background-color: aquamarine;
+            margin-left: 150px;
+            transition-duration: width 3s;
+        }
+        h1{
+            padding-left: 180px;
+            color: blueviolet;
+           
+        }
+        h2{
+           padding-left: 100px;
+        }
+        p{
+            box-shadow: 0px 0px 8px 8px orangered inset;
+            height: 130px;
+            width: 150px;
+            border-radius: 8px;
+           text-align: center;
+           padding-top: 80px;
+           margin:40px;
+           display: inline-block;
+           transition-property:box-shadow ;
+           transition-duration: 4s;
+           transition-property: all;
+          
+        }
+        #id1:hover{
+            transform: translate(30px ,30px);
+      box-shadow: 0px 0px 7px 8px blueviolet;
+        }
+        #id2:hover{
+            transform: translateX(80px);
+            transition-property: width;
+            width: 20px;
+        }
+        #id3:hover{
+            transform: translatey(90px);
+            transition-property: heigth;
+            height: 30px;
+        }
+        #id11:hover{
+            transform: scale(2.5);
+            transition-property: all;
+            height: 10px;
+            width: 15px;
+        }
+        #id12:hover{
+            transform: scalex(2.5);
+            transition:30px ;
+        }
+        #id13:hover{
+            transform: scaley(1.5);
+            transition:20px ;
+        }
+        #id01:hover{
+            transform: rotate(420deg);
+            transition: 2px 3px;
+        }
+        #id22:hover{
+            transform: rotatex(-120deg);
+            transition-timing-function: linear;
+        }
+        #id33:hover{
+            transform: rotatey(80deg);
+            transition-timing-function:ease-in;
+        }
+        #id0:hover{
+            transform: skew(40deg, 20deg);
+            transition-timing-function:ease-in-out;
+        }
+        #id9:hover{
+            transform: skewx(40deg);
+            height: 30px;
+            width: 40px;
+            transition-timing-function:ease-in-out;
+        }
+        #id8:hover{
+            transform: skewy(50deg);
+            height: 30px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform transiton properties:</h1>
+    <h2>Translate property:</h2>
+    <div>
+        <p id="id1">Translate(x-axis, y-axis)</p>
+        <p id="id2">Translate(x-axis)</p>
+        <p id="id3">Translate(y-axis)</p>
+    </div>
+    <h2>Scale property:</h2>
+    <div>
+        <p id="id11">Scale(x-axis, y-axis)</p>
+        <p id="id12">Scale(x-axis)</p>
+        <p id="id13">scale(y-axis)</p>
+    </div>
+    <h2>Rotate property:</h2>
+    <div>
+        <p id="id01">Rotate()</p>
+        <p id="id22">Rotate(x-axis)</p>
+        <p id="id33">Rotate(y-axis)</p>
+    </div>
+    <h2>Skew property:</h2>
+    <div>
+        <p id="id0">Skew(x-axis y-axis)</p>
+        <p id="id9">Skew(x-axis)</p>
+        <p id="id8">Skew(y-axis)</p>
+    </div>
+</body>
+</html>
