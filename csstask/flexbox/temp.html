@@ -1,0 +1,241 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-content: center;
+            background-color: rgb(245, 244, 244);
+            
+        }
+    
+        img{
+            width: 60px;
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6{
+            background-color: white;
+            margin: 18px;
+            width: 350px;
+            height: auto;
+            padding: 12px 20px;
+            border: 1px solid rgb(226, 221, 221);
+        }
+        .item1{
+            display: flex;
+        }
+        .item1 .itemsub1{
+            margin-left: 8px;
+        }
+       .item1a h5,p,span{
+            margin-bottom: 2px;
+        }
+        .checked{
+            color: green;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 18px;
+        }
+        p{
+            padding-bottom: 3px;
+        }
+        .item2{
+            text-align: justify;
+            font-size: 15px;
+            padding: 12px 0 0 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+       .item3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+       }
+       .item3a{
+        color: rgba(54, 53, 53, 0.962);
+       }
+       .item3aa p::after{
+        content: '\003E';
+        color: rgb(12, 187, 187);
+        font-weight: 900;
+        margin-left: 2px;
+       }
+       .item3aa p{
+        color: rgb(12, 187, 187);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       .item1 p{
+        color: rgb(162, 162, 162);
+       }
+    </style>
+</head>
+<body>
+    <div class="container" > 
+        <div class="box1" style="box-shadow: -2px 3px 10px grey;">
+            <div class="item1">
+                <img src="strip.png" alt="_strip">
+                <div class="itemsub1">
+                    <h5>strip</h5>
+                    <p>Payment services</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                     
+                </div>
+            </div>
+            <div class="item2"> 
+                <h4>Get more context on your users with strip data inside our platform</h4>
+            </div>
+            <div class="item3"> 
+                <div class="itemsub3-1">
+                    <p> installed 172 items</p>
+                </div>
+                <div class="itemsub3-2">
+                    <p style="color: blue;"> view >  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2" style="box-shadow: -2px 3px 10px grey;">
+            <div class="item1">
+                <img src="https://techcrunch.com/wp-content/uploads/2020/09/Screenshot-2020-09-22-080330.jpg" alt="_strip">
+                <div class="itemsub1">
+                    <h5>Mailchimp</h5>
+                    <p>project management</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                     
+                </div>
+            </div>
+            <div class="item2"> 
+                <h4>Capture and sync subscribers from your mailchimp platform to our with ease</h4>
+            </div>
+            <div class="item3"> 
+                <div class="itemsub3-1">
+                    <p>Installed 1234 items</p>
+                </div>
+                <div class="itemsub3-2">
+                    <p style="color: blue;">view > </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box3" style="box-shadow: -2px 3px 10px grey;">
+            <div class="item1">
+                <img src="data:image/png;base64,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" alt="_strip">
+                <div class="itemsub1">
+                    <h5>Dropbox</h5>
+                    <p>File management</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    
+                </div>
+            </div>
+            <div class="item2" > 
+                <h4>user dropbox to sync your photos to your platform and share with others</h4>
+            </div>
+            <div class="item3"> 
+                <div class="itemsub3-1">
+                    <p>Installed 1234 items</p>
+                </div>
+                <div class="itemsub3-2">
+                    <p style="color: blue;">view > </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box4" style="box-shadow: -2px 3px 10px grey;">
+            <div class="item1">
+                <img src="data:image/png;base64,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" alt="_strip">
+                <div class="itemsub1">
+                    <h5>Shopify </h5>
+                    <p>Ecommerce</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    
+                </div>
+            </div>
+            <div class="item2"> 
+                <h4>Sell you items with ease with having any website with our free platform</h4>
+            </div>
+            <div class="item3"> 
+                <div class="itemsub3-1">
+                    <p>Installed 1234 items</p>
+                </div>
+                <div class="itemsub3-2">
+                    <p style="color: blue;">view > </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box5" style="box-shadow: -2px 3px 10px grey;">
+            <div class="item1">
+                <img src="data:image/png;base64,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" alt="_strip">
+                <div class="itemsub1">
+                    <h5>Atlassian</h5>
+                    <p>Project management</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                     
+                </div>
+            </div>
+            <div class="item2"> 
+                <h4>Developing products for developers,projects,managers and architects</h4>
+            </div>
+            <div class="item3"> 
+                <div class="itemsub3-1">
+                    <p>Installed 435 items</p>
+                </div>
+                <div class="itemsub3-2">
+                    <p style="color: blue;">view > </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box6" style="box-shadow: -2px 3px 10px grey;">
+            <div class="item1">
+                <img src="data:image/png;base64,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" alt="_strip">
+                <div class="item1a">
+                    <h5>SALEFORCE</h5>
+                    <p>Project management</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                     
+                </div>
+            </div>
+            <div class="item2"> 
+                <h4>Developing products for developers,projects,managers and architects</h4>
+            </div>
+            <div class="item3"> 
+                <div class="item3a">
+                    <p>Installed 456 items</p>
+                </div>
+                <div class="item3aa">
+                    <p style="color: blue;">view  </p>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+</body></html>
